@@ -1,6 +1,10 @@
-# Aman Raj — Portfolio
+# Aman Raj — Personal Portfolio
 
-A dark, terminal-inspired backend engineer portfolio built with React and Vite.
+This repository contains the personal portfolio of Aman Raj, a Java Backend Engineer based in Kolkata. It presents Aman&apos;s professional journey, TCS experience, backend engineering work, education, projects, technical skills, learning roadmap, and contact links.
+
+The portfolio is designed as a personal professional profile for recruiters, hiring teams, collaborators, and anyone interested in Aman&apos;s work with Java, Spring Boot, REST APIs, microservices, databases, and insurance-domain systems.
+
+Built with React, Vite, custom CSS, Bootstrap Icons, and a terminal-inspired visual language.
 
 ## Run locally
 
@@ -29,6 +33,13 @@ All repeatable portfolio content is kept near the top of `src/main.jsx`:
 - Update contact links in the `profile` object.
 
 The page renders those collections automatically, so future content additions do not require restructuring the layout.
+
+## Portfolio links
+
+- Live portfolio: https://aman-raj-portfolio-pi.vercel.app/
+- GitHub profile: https://github.com/amanraj5
+- LinkedIn: https://linkedin.com/in/aman-raj-singh-28feb
+- LeetCode: https://leetcode.com/u/amanraj5/
 
 ## Deploy
 
