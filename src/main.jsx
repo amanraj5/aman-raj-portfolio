@@ -107,6 +107,7 @@ const certifications = [{
   imageAlt: "Meta Front-End Developer certificate",
   description: "Professional training in front-end development, including HTML, CSS, JavaScript, React, and user experience."
 }];
+
 const navigation = ["about", "experience", "projects", "skills", "education", "certifications", "contact"];
 
 function SectionHeader({ index, eyebrow, title, intro }) {
