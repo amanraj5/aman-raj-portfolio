@@ -92,11 +92,20 @@ const skills = [
 ];
 
 const certifications = [{
-  title: "AWS Cloud Foundations",
-  provider: "Planned next step",
-  status: "Roadmap",
-  icon: "bi-cloud-arrow-up",
-  description: "A planned AWS learning track to extend my backend engineering practice into cloud-native delivery, deployment and infrastructure."
+  title: "AWS Certified Cloud Practitioner",
+  provider: "AWS",
+  status: "Completed",
+  image: "/AWS.png",
+  imageAlt: "AWS Certified Cloud Practitioner badge",
+  description: "Foundational knowledge of AWS Cloud concepts, core services, security, architecture, and pricing."
+},
+{
+  title: "Front-End Developer Certificate",
+  provider: "Meta",
+  status: "Completed",
+  image: "/meta-front-end-developer-certificate.png",
+  imageAlt: "Meta Front-End Developer certificate",
+  description: "Professional training in front-end development, including HTML, CSS, JavaScript, React, and user experience."
 }];
 const navigation = ["about", "experience", "projects", "skills", "education", "certifications", "contact"];
 
@@ -133,7 +142,7 @@ function App() {
 
       <section id="education" className="content-section education-section"><div className="container split-section"><SectionHeader index="05" eyebrow="ORIGIN / EDUCATION" title="The foundation layer." intro="Where the curiosity became a discipline." /><div className="education-list">{education.map((item) => <article className="education-card" key={item.institution}><span className="education-year">2020—24</span><div><h3>{item.institution}</h3><p>{item.degree}</p><strong>{item.result}</strong></div><span className="education-period">{item.period}</span></article>)}</div></div></section>
 
-      <section id="certifications" className="content-section dark-section certifications-section"><div className="container"><SectionHeader index="06" eyebrow="CREDENTIALS / CERTIFICATIONS" title="The next proof point." intro="A transparent record of completed credentials and the learning tracks currently in motion." /><div className="certification-grid">{certifications.map((certification) => <article className="certification-card" key={certification.title}><div className="certification-icon"><i className={`bi ${certification.icon}`} /></div><div className="certification-copy"><div className="certification-meta"><span>{certification.status}</span><span>{certification.provider}</span></div><h3>{certification.title}</h3><p>{certification.description}</p><div className="certification-status"><i className="bi bi-hourglass-split" /> Planned · will be updated after completion</div></div></article>)}</div><p className="credentials-note"><i className="bi bi-info-circle" /> No certifications completed yet. This section is intentionally ready for future AWS and professional credentials.</p></div></section>
+      <section id="certifications" className="content-section dark-section certifications-section"><div className="container"><SectionHeader index="06" eyebrow="CREDENTIALS / CERTIFICATIONS" title="Proof of continuous learning." intro="Completed credentials that support my work across cloud services and front-end development." /><div className="certification-grid">{certifications.map((certification) => <article className="certification-card" key={certification.title}><div className="certification-art"><img src={certification.image} alt={certification.imageAlt} loading="lazy" decoding="async" /></div><div className="certification-copy"><div className="certification-meta"><span>{certification.status}</span><span>{certification.provider}</span></div><h3>{certification.title}</h3><p>{certification.description}</p><div className="certification-status"><i className="bi bi-patch-check-fill" aria-hidden="true" /> Completed credential</div></div></article>)}</div></div></section>
 
       <section id="contact" className="contact-section"><div className="container contact-layout"><div><p className="eyebrow">07 / ESTABLISH CONNECTION</p><h2>Have a system<br /><em>worth building?</em></h2><p className="contact-copy">I&apos;m open to conversations about Java backend engineering, platform work and products that care about the details.</p></div><div className="contact-panel"><p className="terminal-line"><span className="prompt">aman@portfolio:~$</span> connect</p><a href={`mailto:${profile.email}`} className="contact-email">{profile.email}</a><div className="contact-links"><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <i className="bi bi-arrow-up-right" /></a><a href={profile.github} target="_blank" rel="noreferrer">GitHub <i className="bi bi-arrow-up-right" /></a><a href={profile.leetcode} target="_blank" rel="noreferrer">LeetCode <i className="bi bi-arrow-up-right" /></a></div><p className="contact-location"><i className="bi bi-geo-alt" /> {profile.location} · {profile.phone}</p></div></div></section>
     </main>
