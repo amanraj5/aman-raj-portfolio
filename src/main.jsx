@@ -100,6 +100,14 @@ const certifications = [{
   description: "Foundational knowledge of AWS Cloud concepts, core services, security, architecture, and pricing."
 },
 {
+  title: "AWS Certified Developer - Associate",
+  provider: "AWS",
+  status: "Completed",
+  image: "/AWS-Developer.png",
+  imageAlt: "AWS Certified Developer - Associate badge",
+  description: "Validate technical proficiency in developing, testing, deploying, and debugging AWS Cloud-based applications."
+},
+{
   title: "Front-End Developer Certificate",
   provider: "Meta",
   status: "Completed",
